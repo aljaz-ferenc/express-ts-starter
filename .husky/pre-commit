@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "💡 Pre-commit hook running..."
+pnpm check
+echo "✅ Pre-commit check passed!"

@@ -1,0 +1,32 @@
+{
+	"name": "express-ts-starter",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "cross-env NODE_ENV=development nodemon",
+		"start": "cross-env NODE_ENV=production node dist/index.js",
+		"build": "tsc",
+		"prebuild": "rimraf dist",
+		"prepare": "husky",
+		"check": "pnpm exec biome check --write --error-on-warnings"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.28.2",
+	"dependencies": {
+		"dotenv": "^17.3.1",
+		"express": "^5.2.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.15",
+		"@types/express": "^5.0.6",
+		"cross-env": "^10.1.0",
+		"husky": "^9.1.7",
+		"nodemon": "^3.1.11",
+		"ts-node": "^10.9.2",
+		"tsx": "^4.21.0",
+		"typescript": "^5.9.3"
+	}
+}
